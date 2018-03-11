@@ -15,7 +15,6 @@ function reconstructed_image = refine_reconstruction(projections,...
     better_theta = noisy_theta;
     previous_error = inf;
     precision = 0.1;
-    errors = [];
 
     for i=1:40
         A = radonTransform(...
@@ -35,9 +34,6 @@ function reconstructed_image = refine_reconstruction(projections,...
         if function_error < previous_error
             noisy_theta = better_theta;
             previous_error = function_error;
-
-            disp(function_error);
-            errors = [errors function_error];
 
             % Do a brute force search on all angles.
             better_theta = ...

@@ -85,7 +85,5 @@ figure; imshow(reconstructed_image);
 figure; plot(errors);
 saveas(gcf,'results/angles_starved/18/error.png');
 
-imwrite(reconstructed_image, 'results/angles_starved/18/reconstructed_image.png');
-
-
-
+imwrite(reconstructed_image, ...
+    'results/angles_starved/18/reconstructed_image.png');

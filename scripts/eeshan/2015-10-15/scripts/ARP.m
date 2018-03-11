@@ -12,7 +12,7 @@
     tic
     %% %%%%%%%%%%%%% PARAMETERS %%%%%%%%%%%%%
     thetas = (0:179); % Projections to sample from
-    numkeep = 30; % Number of angles to recompute from
+    numkeep = 100; % Number of angles to recompute from
     sigmaNoiseFraction = 0.00;
 
     %% %%%%%%%%%%%%% A. GENERATE INPUT DATA %%%%%%%%%%%%%%%%%
@@ -21,6 +21,7 @@
     %I = phantom(200);
     imagefile = '../images/200px-mickey.jpg';
     I = rgb2gray(imread(imagefile));
+    I = imresize(I, 0.4);
     %  figure();
     %imshow(I,'InitialMagnification','fit');
 
@@ -181,7 +182,7 @@
     sparsity(alpha_reconstructed)
     
     figure();
-    imshow(I_reconstructed / max(max(I_reconstructed)), 'InitialMagnification','fit');
+    imshow(I_reconstructed / max(max(I_reconstructed)));
     
     
     
