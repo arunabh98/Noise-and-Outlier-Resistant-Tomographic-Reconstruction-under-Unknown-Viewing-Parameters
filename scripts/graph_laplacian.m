@@ -8,11 +8,11 @@ P = im2double(rgb2gray(P));
 d = 2;
 epsilon = 80;
 precision = 0.01;
-for o=1:1
+parfor o=1:8
     disp(num_theta(o));
     num_angles = num_theta(o);
 
-    % Write the original image.
+    % Write the originacdl image.
     imwrite(P, strcat('../results/gl_unknown_angles/num_angles/',...
         num2str(num_angles), '/original_image.png'));
 
@@ -44,6 +44,7 @@ for o=1:1
     L = D\W - eye(size(theta, 2)*2);
 
     % Compute the eigenvalue and reduce the dimension.
+    options = struct;
     options.disp = 0; options.isreal = 1; options.issym = 1; 
     [Y,eigenvals] = eigs(L,d+1,0,options);
     Y = Y(:,2:d+1)'*sqrt(size(projections, 2));

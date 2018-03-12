@@ -3,7 +3,7 @@ num_theta = [10 20 30 50 100 170 500 1000];
 P = imread('../images/200px-mickey.jpg');
 P = imresize(P, 0.4);
 P = im2double(rgb2gray(P));
-for o=1:8
+parfor o=1:8
     disp(num_theta(o));
     % Write the original image.
     imwrite(P, strcat('../results/unknown_angles/num_angles/',...
