@@ -1,4 +1,4 @@
-num_theta = [10 20 30 50 100 170 500 1000];
+num_theta = [500 1000 2000 5000 7000 10000];
 % Get the image.
 P = imread('../images/200px-mickey.jpg');
 P = imresize(P, 0.4);
@@ -12,7 +12,7 @@ parfor o=1:8
     % Constants.
     snr = 1;
     num_angles = 100;
-    precision = 0.1;
+    precision = 0.01;
 
     % Define ground truth angles and take the tomographic projection.
     possible_thetas = 0:precision:(180-precision);
