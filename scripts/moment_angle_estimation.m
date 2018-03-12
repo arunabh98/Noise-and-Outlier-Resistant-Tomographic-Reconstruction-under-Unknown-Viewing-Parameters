@@ -1,4 +1,5 @@
-function thetasestimated = moment_angle_estimation(projections, thetasestimated)
+function thetasestimated = ...
+    moment_angle_estimation(projections, thetasestimated)
     I_current = iradon(projections, thetasestimated);
     I_current = I_current(2:end-1, 2:end-1); % crop
 
@@ -15,7 +16,7 @@ function thetasestimated = moment_angle_estimation(projections, thetasestimated)
             besttheta = thetasestimated(i);
             bestE = E_current;
 
-            for t = -179:0.01:180
+            for t = -0:0.1:180
                 thetas_iter = thetasestimated;
                 thetas_iter(i) = t;
 

@@ -1,9 +1,9 @@
-num_theta = [500 1000 2000 5000 7000 10000];
+num_theta = [10 20 30 50 70 100 120 150];
 % Get the image.
 P = imread('../images/200px-mickey.jpg');
-P = imresize(P, 0.4);
+P = imresize(P, 0.5);
 P = im2double(rgb2gray(P));
-parfor o=1:6
+for o=6:6
     disp(num_theta(o));
     % Write the original image.
     imwrite(P, strcat('../results/unknown_angles/num_angles/',...
@@ -12,13 +12,13 @@ parfor o=1:6
     % Constants.
     snr = 1;
     num_angles = 100;
-    precision = 0.01;
+    precision = 1;
 
     % Define ground truth angles and take the tomographic projection.
     possible_thetas = 0:precision:(180-precision);
     theta = datasample(possible_thetas, num_angles);
     projections = radon(P, theta);
-    projections = [projections flipud(projections)];
+%     projections = [projections flipud(projections)];
 
     % Constrain the output size of each reconstruction to be the same as the
     % size of the original image, |P|.

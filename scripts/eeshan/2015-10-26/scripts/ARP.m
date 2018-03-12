@@ -21,7 +21,6 @@
     %I = phantom(200);
     imagefile = '../images/200px-mickey.jpg';
     I = rgb2gray(imread(imagefile));
-    I = imresize(I, 0.4);
     %  figure();
     %imshow(I,'InitialMagnification','fit');
 
