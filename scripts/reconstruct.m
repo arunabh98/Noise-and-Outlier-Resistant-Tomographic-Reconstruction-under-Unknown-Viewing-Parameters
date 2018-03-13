@@ -1,12 +1,12 @@
-num_theta = [10 20 30 50 70 100 120 150];
+num_theta = [3 5 10 20 50 100 150];
 % Get the image.
 P = imread('../images/200px-mickey.jpg');
-P = imresize(P, 0.5);
+P = imresize(P, 0.4);
 P = im2double(rgb2gray(P));
-for o=6:6
+parfor o=1:7
     disp(num_theta(o));
     % Write the original image.
-    imwrite(P, strcat('../results/unknown_angles/num_angles/',...
+    imwrite(P, strcat('../results/unknown_angles/100/',...
         num2str(num_theta(o)), '/original_image.png'));
 
     % Constants.
@@ -28,19 +28,19 @@ for o=6:6
     projection_length = size(projections, 1);
 
     % Initialize angles randomly
-    thetasestimated = firstestimate(theta);
+    thetasestimated = firstestimate(theta, num_theta(o));
 
     thetasestimated = moment_angle_estimation(projections, thetasestimated');
 
     % Reconstruct the images from projection.
     reconstructed_image = iradon(projections, thetasestimated, output_size);
     imwrite(reconstructed_image, ...
-        strcat('../results/unknown_angles/num_angles/',...
+        strcat('../results/unknown_angles/100/',...
         num2str(num_theta(o)), '/estimated_image.png'));
 
     reconstructed_image = refine_reconstruction(projections,...
         thetasestimated', height, width, projection_length, output_size);
 
-    imwrite(reconstructed_image, strcat('../results/unknown_angles/num_angles/',...
+    imwrite(reconstructed_image, strcat('../results/unknown_angles/100/',...
         num2str(num_theta(o)), '/reconstructed.png'));
 end;

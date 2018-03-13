@@ -21,6 +21,7 @@
     %I = phantom(200);
     imagefile = '../images/200px-mickey.jpg';
     I = rgb2gray(imread(imagefile));
+    I = imresize(I, 0.4);
     %  figure();
     %imshow(I,'InitialMagnification','fit');
 
@@ -140,22 +141,23 @@
         ctr = ctr + 1;
         disp([num2str(iteration)]);
         for i = 1:numkeep
-            i
             besttheta = thetasestimated(i);
-            bestE = E_current
+            bestE = E_current;
+            E_array = [];
             
-            for t = [-179:180]
+            for t = -179:180
                 thetas_iter = thetasestimated;
                 thetas_iter(i) = t;
 
                 E_t = (norm(Pgiven - radon(I_current, thetas_iter),2)) ^ 2;
                 
+%                 E_array = [E_array E_t];
                 if E_t < bestE
                     besttheta = t;
                     bestE = E_t;
                 end
             end
-            besttheta
+%             [~, besttheta] = min(E_array);
             thetasestimated(i) = besttheta;
             I_current = iradon(Pgiven, thetasestimated);
             I_current = I_current(2:end-1, 2:end-1); % crop
