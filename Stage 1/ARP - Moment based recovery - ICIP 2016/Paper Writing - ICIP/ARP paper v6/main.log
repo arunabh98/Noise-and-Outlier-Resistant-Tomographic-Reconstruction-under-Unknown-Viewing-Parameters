@@ -1,0 +1,675 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.19)  11 MAY 2016 00:31
+entering extended mode
+**C:/Courses/Ongoing/Research/ARP*-*Moment*based*recovery*-*ICASSP/Paper*Writin
+g*-*ICIP/ARP*paper*v6/main.tex
+
+("C:/Courses/Ongoing/Research/ARP - Moment based recovery - ICASSP/Paper Writin
+g - ICIP/ARP paper v6/main.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Courses\Ongoing\Research\ARP - Moment based recovery - ICASSP\Paper Writin
+g - ICIP\ARP paper v6\spconf.sty")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks15
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count99
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+
+! LaTeX Error: File `algpseudocode.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\bm.sty"
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+No file main.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 26.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count100
+\scratchdimen=\dimen114
+\scratchbox=\box28
+\nofMPsegments=\count101
+\nofMParguments=\count102
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count103
+\MPscratchDim=\dimen115
+\MPnumerator=\count104
+\makeMPintoPDFobject=\count105
+\everyMPtoPDFconversion=\toks21
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+
+
+LaTeX Warning: Citation `Frank1996' on page 1 undefined on input line 41.
+
+
+LaTeX Warning: Citation `Walker2014' on page 1 undefined on input line 41.
+
+
+LaTeX Warning: Citation `Wood1995' on page 1 undefined on input line 41.
+
+
+LaTeX Warning: Citation `uniqueness' on page 1 undefined on input line 43.
+
+
+LaTeX Warning: Citation `feasibility' on page 1 undefined on input line 43.
+
+
+LaTeX Warning: Citation `fangslle' on page 1 undefined on input line 43.
+
+
+LaTeX Warning: Citation `fangmds' on page 1 undefined on input line 43.
+
+
+LaTeX Warning: Citation `graphlaplacian' on page 1 undefined on input line 43.
+
+
+LaTeX Warning: Citation `feasibility' on page 1 undefined on input line 43.
+
+
+LaTeX Warning: Reference `ssec:descent' on page 1 undefined on input line 43.
+
+
+LaTeX Warning: Citation `graphlaplacian' on page 1 undefined on input line 43.
+
+
+LaTeX Warning: Citation `dipbook' on page 1 undefined on input line 47.
+
+
+LaTeX Warning: Citation `imagemomentmethod' on page 1 undefined on input line 4
+7.
+
+
+LaTeX Warning: Citation `uniqueness' on page 1 undefined on input line 51.
+
+
+LaTeX Warning: Citation `feasibility' on page 1 undefined on input line 51.
+
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+
+]
+
+LaTeX Warning: Citation `kim2008interior' on page 2 undefined on input line 55.
+
+
+
+LaTeX Warning: Citation `Muresan03' on page 2 undefined on input line 59.
+
+
+LaTeX Warning: Citation `singer2013' on page 2 undefined on input line 61.
+
+
+LaTeX Warning: Citation `Natterer1986' on page 2 undefined on input line 65.
+
+
+Overfull \hbox (0.7938pt too wide) in paragraph at lines 65--66
+\OT1/ptm/m/n/10 This is the key part of the al-go-rithm. We uti-lize the Helgas
+son-
+ []
+
+
+LaTeX Warning: Citation `dipbook' on page 2 undefined on input line 69.
+
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 75.
+
+
+LaTeX Warning: Reference `hlcc1' on page 2 undefined on input line 77.
+
+
+LaTeX Warning: Reference `hlcc1' on page 2 undefined on input line 80.
+
+
+! LaTeX Error: Environment algorithmic undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 \begin{algorithmic}
+                        [1]
+? 
+! Undefined control sequence.
+l.88 \State
+            Randomly initialize $\bm{\theta}$ estimates, by picking each $\t...
+
+? 
+! Undefined control sequence.
+l.89 \State
+            Calculate projection moments, $\bm{m^{(j)}_{\theta_i}}$, of the ...
+
+? 
+! Undefined control sequence.
+l.90 \State
+            Estimate image moments of the first $k$ orders, $\bm{\upsilon^{(...
+
+? 
+! Undefined control sequence.
+l.91 \State
+            Calculate $E$ using \ref{Ehlcc}.
+? 
+
+LaTeX Warning: Reference `Ehlcc' on page 2 undefined on input line 91.
+
+! Undefined control sequence.
+l.92 \State
+            Set $\Delta E = \infty$
+? 
+! Undefined control sequence.
+l.93 \While
+           {$\Delta E > \epsilon$}
+? 
+! Undefined control sequence.
+l.94     \For
+             {each $\theta_i$}
+? 
+! Undefined control sequence.
+l.95         \For
+                 {each angle in $-\pi$ to $\pi$, with appropriate resolution}
+? 
+! Undefined control sequence.
+l.96             \State
+                        Assume this value for $\theta_i$
+? 
+! Undefined control sequence.
+l.97             \State
+                        Recalculate image moments using this value
+? 
+! Undefined control sequence.
+l.98             \State
+                        Calculate $E$ again, using updated values of $\theta...
+
+? 
+! Undefined control sequence.
+l.99             \If
+                     {$E$ $<$ previous-best-estimate}
+? 
+! Undefined control sequence.
+l.100                 \State
+                             update the best estimate for $\theta_i$
+? 
+! Undefined control sequence.
+l.101                 \State
+                             $\Delta E = $ Old value of $E$ $-$ new value of...
+
+? 
+! Undefined control sequence.
+l.102                 \State
+                             Update the value of $E$
+? 
+! Undefined control sequence.
+l.103             \EndIf
+                        
+? 
+! Undefined control sequence.
+l.104         \EndFor
+                     
+? 
+! Undefined control sequence.
+l.105     \EndFor
+                 
+? 
+! Undefined control sequence.
+l.106 \EndWhile
+               
+? 
+
+! LaTeX Error: \begin{document} ended by \end{algorithmic}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 \end{algorithmic}
+                       
+? 
+[2]
+
+LaTeX Warning: Reference `fig:recon' on page 3 undefined on input line 117.
+
+
+LaTeX Warning: Reference `fig:graphs' on page 3 undefined on input line 117.
+
+
+LaTeX Warning: Reference `fig:graphs' on page 3 undefined on input line 117.
+
+
+LaTeX Warning: Citation `singer2013' on page 3 undefined on input line 120.
+
+
+LaTeX Warning: Citation `graphlaplacian' on page 3 undefined on input line 120.
+
+
+
+LaTeX Warning: Citation `feasibility' on page 3 undefined on input line 120.
+
+
+LaTeX Warning: Citation `feasibility' on page 3 undefined on input line 122.
+
+
+LaTeX Warning: Citation `singer2013' on page 3 undefined on input line 122.
+
+
+LaTeX Warning: Citation `graphlaplacian' on page 3 undefined on input line 122.
+
+
+<images/mickey_grey.jpg, id=25, 200.75pt x 200.75pt>
+File: images/mickey_grey.jpg Graphic file (type jpg)
+
+<use images/mickey_grey.jpg>
+Package pdftex.def Info: images/mickey_grey.jpg used on input line 127.
+(pdftex.def)             Requested size: 61.17342pt x 61.17198pt.
+
+<images/earthrise_actual.jpg, id=26, 256.96pt x 256.96pt>
+File: images/earthrise_actual.jpg Graphic file (type jpg)
+
+<use images/earthrise_actual.jpg>
+Package pdftex.def Info: images/earthrise_actual.jpg used on input line 128.
+(pdftex.def)             Requested size: 61.17342pt x 61.1737pt.
+
+
+LaTeX Warning: Reference `fig:recon' on page 3 undefined on input line 129.
+
+
+LaTeX Warning: Reference `fig:recon' on page 3 undefined on input line 129.
+
+
+<images/mickey_nonunif_5pc_30_10_6_5_actualangles.jpg, id=27, 288.07625pt x 288
+.07625pt>
+File: images/mickey_nonunif_5pc_30_10_6_5_actualangles.jpg Graphic file (type j
+pg)
+ <use images/mickey_nonunif_5pc_30_10_6_5_actualangles.jpg>
+Package pdftex.def Info: images/mickey_nonunif_5pc_30_10_6_5_actualangles.jpg u
+sed on input line 136.
+(pdftex.def)             Requested size: 73.40884pt x 73.40791pt.
+
+<images/mickey_nonunif_5pc_100_10_6_5_actualangles.jpg, id=28, 288.07625pt x 28
+8.07625pt>
+File: images/mickey_nonunif_5pc_100_10_6_5_actualangles.jpg Graphic file (type 
+jpg)
+ <use images/mickey_nonunif_5pc_100_10_6_5_actualangles.jpg>
+Package pdftex.def Info: images/mickey_nonunif_5pc_100_10_6_5_actualangles.jpg 
+used on input line 137.
+(pdftex.def)             Requested size: 73.40884pt x 73.40791pt.
+
+<images/earthrise_nonunif_5pc_100_10_6_5_actualangles.jpg, id=29, 368.37625pt x
+ 368.37625pt>
+File: images/earthrise_nonunif_5pc_100_10_6_5_actualangles.jpg Graphic file (ty
+pe jpg)
+ <use images/earthrise_nonunif_5pc_100_10_6_5_actualangles.jpg>
+Package pdftex.def Info: images/earthrise_nonunif_5pc_100_10_6_5_actualangles.j
+pg used on input line 138.
+(pdftex.def)             Requested size: 73.40884pt x 73.40413pt.
+
+<images/mickey_nonunif_5pc_30_10_6_5_estimatedangles.jpg, id=30, 288.07625pt x 
+288.07625pt>
+File: images/mickey_nonunif_5pc_30_10_6_5_estimatedangles.jpg Graphic file (typ
+e jpg)
+ <use images/mickey_nonunif_5pc_30_10_6_5_estimatedangles.jpg>
+Package pdftex.def Info: images/mickey_nonunif_5pc_30_10_6_5_estimatedangles.jp
+g used on input line 142.
+(pdftex.def)             Requested size: 73.40884pt x 73.40791pt.
+
+<images/mickey_nonunif_5pc_100_10_6_5_estimatedangles.jpg, id=31, 288.07625pt x
+ 288.07625pt>
+File: images/mickey_nonunif_5pc_100_10_6_5_estimatedangles.jpg Graphic file (ty
+pe jpg)
+ <use images/mickey_nonunif_5pc_100_10_6_5_estimatedangles.jpg>
+Package pdftex.def Info: images/mickey_nonunif_5pc_100_10_6_5_estimatedangles.j
+pg used on input line 143.
+(pdftex.def)             Requested size: 73.40884pt x 73.40791pt.
+
+<images/earthrise_nonunif_5pc_100_10_6_5_estimatedangles.jpg, id=32, 368.37625p
+t x 368.37625pt>
+File: images/earthrise_nonunif_5pc_100_10_6_5_estimatedangles.jpg Graphic file 
+(type jpg)
+
+<use images/earthrise_nonunif_5pc_100_10_6_5_estimatedangles.jpg>
+Package pdftex.def Info: images/earthrise_nonunif_5pc_100_10_6_5_estimatedangle
+s.jpg used on input line 144.
+(pdftex.def)             Requested size: 73.40884pt x 73.40413pt.
+
+<images/mickey_nonunif_10pc_30_10_6_5_actualangles.jpg, id=33, 288.07625pt x 28
+8.07625pt>
+File: images/mickey_nonunif_10pc_30_10_6_5_actualangles.jpg Graphic file (type 
+jpg)
+ <use images/mickey_nonunif_10pc_30_10_6_5_actualangles.jpg>
+Package pdftex.def Info: images/mickey_nonunif_10pc_30_10_6_5_actualangles.jpg 
+used on input line 148.
+(pdftex.def)             Requested size: 73.40884pt x 73.40791pt.
+
+<images/mickey_nonunif_10pc_100_10_6_5_actualangles.jpg, id=34, 288.07625pt x 2
+88.07625pt>
+File: images/mickey_nonunif_10pc_100_10_6_5_actualangles.jpg Graphic file (type
+ jpg)
+ <use images/mickey_nonunif_10pc_100_10_6_5_actualangles.jpg>
+Package pdftex.def Info: images/mickey_nonunif_10pc_100_10_6_5_actualangles.jpg
+ used on input line 149.
+(pdftex.def)             Requested size: 73.40884pt x 73.40791pt.
+
+<images/earthrise_nonunif_10pc_100_10_6_5_actualangles.jpg, id=35, 368.37625pt 
+x 368.37625pt>
+File: images/earthrise_nonunif_10pc_100_10_6_5_actualangles.jpg Graphic file (t
+ype jpg)
+ <use images/earthrise_nonunif_10pc_100_10_6_5_actualangles.jpg>
+Package pdftex.def Info: images/earthrise_nonunif_10pc_100_10_6_5_actualangles.
+jpg used on input line 150.
+(pdftex.def)             Requested size: 73.40884pt x 73.40413pt.
+
+<images/mickey_nonunif_10pc_30_10_6_5_estimatedangles.jpg, id=36, 288.07625pt x
+ 288.07625pt>
+File: images/mickey_nonunif_10pc_30_10_6_5_estimatedangles.jpg Graphic file (ty
+pe jpg)
+ <use images/mickey_nonunif_10pc_30_10_6_5_estimatedangles.jpg>
+Package pdftex.def Info: images/mickey_nonunif_10pc_30_10_6_5_estimatedangles.j
+pg used on input line 154.
+(pdftex.def)             Requested size: 73.40884pt x 73.40791pt.
+
+<images/mickey_nonunif_10pc_100_10_6_5_estimatedangles.jpg, id=37, 288.07625pt 
+x 288.07625pt>
+File: images/mickey_nonunif_10pc_100_10_6_5_estimatedangles.jpg Graphic file (t
+ype jpg)
+ <use images/mickey_nonunif_10pc_100_10_6_5_estimatedangles.jpg>
+Package pdftex.def Info: images/mickey_nonunif_10pc_100_10_6_5_estimatedangles.
+jpg used on input line 155.
+(pdftex.def)             Requested size: 73.40884pt x 73.40791pt.
+
+<images/earthrise_nonunif_10pc_100_10_6_5_estimatedangles.jpg, id=38, 368.37625
+pt x 368.37625pt>
+File: images/earthrise_nonunif_10pc_100_10_6_5_estimatedangles.jpg Graphic file
+ (type jpg)
+
+<use images/earthrise_nonunif_10pc_100_10_6_5_estimatedangles.jpg>
+Package pdftex.def Info: images/earthrise_nonunif_10pc_100_10_6_5_estimatedangl
+es.jpg used on input line 156.
+(pdftex.def)             Requested size: 73.40884pt x 73.40413pt.
+
+<images/graphs/m-unif-10pc-100.png, id=39, 198.0198pt x 177.7842pt>
+File: images/graphs/m-unif-10pc-100.png Graphic file (type png)
+
+<use images/graphs/m-unif-10pc-100.png>
+Package pdftex.def Info: images/graphs/m-unif-10pc-100.png used on input line 1
+67.
+(pdftex.def)             Requested size: 97.87598pt x 87.87457pt.
+
+<images/graphs/e-unif-10pc-100.png, id=41, 198.0198pt x 177.7842pt>
+File: images/graphs/e-unif-10pc-100.png Graphic file (type png)
+
+<use images/graphs/e-unif-10pc-100.png>
+Package pdftex.def Info: images/graphs/e-unif-10pc-100.png used on input line 1
+68.
+(pdftex.def)             Requested size: 97.87598pt x 87.87457pt.
+
+<images/graphs/m-nonunif-10pc-100.png, id=42, 198.0198pt x 177.7842pt>
+File: images/graphs/m-nonunif-10pc-100.png Graphic file (type png)
+
+<use images/graphs/m-nonunif-10pc-100.png>
+Package pdftex.def Info: images/graphs/m-nonunif-10pc-100.png used on input lin
+e 170.
+(pdftex.def)             Requested size: 97.87598pt x 87.87457pt.
+
+<images/graphs/e-nonunif-10pc-100.png, id=43, 198.0198pt x 177.7842pt>
+File: images/graphs/e-nonunif-10pc-100.png Graphic file (type png)
+
+<use images/graphs/e-nonunif-10pc-100.png>
+Package pdftex.def Info: images/graphs/e-nonunif-10pc-100.png used on input lin
+e 171.
+(pdftex.def)             Requested size: 97.87598pt x 87.87457pt.
+
+<images/graphs/m-peaky-10pc-100.png, id=44, 198.0198pt x 177.7842pt>
+File: images/graphs/m-peaky-10pc-100.png Graphic file (type png)
+
+<use images/graphs/m-peaky-10pc-100.png>
+Package pdftex.def Info: images/graphs/m-peaky-10pc-100.png used on input line 
+173.
+(pdftex.def)             Requested size: 97.87598pt x 87.87457pt.
+
+<images/graphs/e-peaky-10pc-100.png, id=45, 198.0198pt x 177.7842pt>
+File: images/graphs/e-peaky-10pc-100.png Graphic file (type png)
+
+<use images/graphs/e-peaky-10pc-100.png>
+Package pdftex.def Info: images/graphs/e-peaky-10pc-100.png used on input line 
+174.
+(pdftex.def)             Requested size: 97.87598pt x 87.87457pt.
+ [3 <C:/Courses/Ongoing/Research/ARP - Moment based recovery - ICASSP/Paper Wri
+ting - ICIP/ARP paper v6/images/mickey_grey.jpg> <C:/Courses/Ongoing/Research/A
+RP - Moment based recovery - ICASSP/Paper Writing - ICIP/ARP paper v6/images/ea
+rthrise_actual.jpg>] [4 <C:/Courses/Ongoing/Research/ARP - Moment based recover
+y - ICASSP/Paper Writing - ICIP/ARP paper v6/images/mickey_nonunif_5pc_30_10_6_
+5_actualangles.jpg> <C:/Courses/Ongoing/Research/ARP - Moment based recovery - 
+ICASSP/Paper Writing - ICIP/ARP paper v6/images/mickey_nonunif_5pc_100_10_6_5_a
+ctualangles.jpg> <C:/Courses/Ongoing/Research/ARP - Moment based recovery - ICA
+SSP/Paper Writing - ICIP/ARP paper v6/images/earthrise_nonunif_5pc_100_10_6_5_a
+ctualangles.jpg> <C:/Courses/Ongoing/Research/ARP - Moment based recovery - ICA
+SSP/Paper Writing - ICIP/ARP paper v6/images/mickey_nonunif_5pc_30_10_6_5_estim
+atedangles.jpg> <C:/Courses/Ongoing/Research/ARP - Moment based recovery - ICAS
+SP/Paper Writing - ICIP/ARP paper v6/images/mickey_nonunif_5pc_100_10_6_5_estim
+atedangles.jpg> <C:/Courses/Ongoing/Research/ARP - Moment based recovery - ICAS
+SP/Paper Writing - ICIP/ARP paper v6/images/earthrise_nonunif_5pc_100_10_6_5_es
+timatedangles.jpg> <C:/Courses/Ongoing/Research/ARP - Moment based recovery - I
+CASSP/Paper Writing - ICIP/ARP paper v6/images/mickey_nonunif_10pc_30_10_6_5_ac
+tualangles.jpg> <C:/Courses/Ongoing/Research/ARP - Moment based recovery - ICAS
+SP/Paper Writing - ICIP/ARP paper v6/images/mickey_nonunif_10pc_100_10_6_5_actu
+alangles.jpg> <C:/Courses/Ongoing/Research/ARP - Moment based recovery - ICASSP
+/Paper Writing - ICIP/ARP paper v6/images/earthrise_nonunif_10pc_100_10_6_5_act
+ualangles.jpg> <C:/Courses/Ongoing/Research/ARP - Moment based recovery - ICASS
+P/Paper Writing - ICIP/ARP paper v6/images/mickey_nonunif_10pc_30_10_6_5_estima
+tedangles.jpg> <C:/Courses/Ongoing/Research/ARP - Moment based recovery - ICASS
+P/Paper Writing - ICIP/ARP paper v6/images/mickey_nonunif_10pc_100_10_6_5_estim
+atedangles.jpg> <C:/Courses/Ongoing/Research/ARP - Moment based recovery - ICAS
+SP/Paper Writing - ICIP/ARP paper v6/images/earthrise_nonunif_10pc_100_10_6_5_e
+stimatedangles.jpg> <C:/Courses/Ongoing/Research/ARP - Moment based recovery - 
+ICASSP/Paper Writing - ICIP/ARP paper v6/images/graphs/m-unif-10pc-100.png> <C:
+/Courses/Ongoing/Research/ARP - Moment based recovery - ICASSP/Paper Writing - 
+ICIP/ARP paper v6/images/graphs/e-unif-10pc-100.png> <C:/Courses/Ongoing/Resear
+ch/ARP - Moment based recovery - ICASSP/Paper Writing - ICIP/ARP paper v6/image
+s/graphs/m-nonunif-10pc-100.png> <C:/Courses/Ongoing/Research/ARP - Moment base
+d recovery - ICASSP/Paper Writing - ICIP/ARP paper v6/images/graphs/e-nonunif-1
+0pc-100.png> <C:/Courses/Ongoing/Research/ARP - Moment based recovery - ICASSP/
+Paper Writing - ICIP/ARP paper v6/images/graphs/m-peaky-10pc-100.png> <C:/Cours
+es/Ongoing/Research/ARP - Moment based recovery - ICASSP/Paper Writing - ICIP/A
+RP paper v6/images/graphs/e-peaky-10pc-100.png>]
+No file main.bbl.
+
+("C:\Courses\Ongoing\Research\ARP - Moment based recovery - ICASSP\Paper Writin
+g - ICIP\ARP paper v6\main.aux")
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2331 strings out of 493921
+ 32705 string characters out of 3144846
+ 93438 words of memory out of 3000000
+ 5572 multiletter control sequences out of 15000+200000
+ 27392 words of font info for 73 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 27i,13n,26p,2260b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/u
+rw/times/utmri8a.pfb>
+Output written on main.pdf (4 pages, 501076 bytes).
+PDF statistics:
+ 115 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+

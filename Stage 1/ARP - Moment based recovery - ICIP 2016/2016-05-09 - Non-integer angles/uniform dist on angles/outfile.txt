@@ -1,0 +1,16 @@
+********************
+../images/256px-Earthrise.jpg,Earthrise,0.00,100, 1, 5, 5,0/57/88/100/100
+
+
+********************
+../images/256px-Earthrise.jpg,Earthrise,0.00,100,10, 6, 5,0/58/89/100/100
+../images/256px-Earthrise.jpg,Earthrise,0.05,100,10, 6, 5,0/71/94/99/100
+../images/256px-Earthrise.jpg,Earthrise,0.10,100,10, 6, 5,0/39/77/99/100
+../images/200px-mickey.jpg,mickey,0.00,100,10, 6, 5,0/79/100/100/100
+../images/200px-mickey.jpg,mickey,0.05,100,10, 6, 5,0/33/66/96/100
+../images/200px-mickey.jpg,mickey,0.10,100,10, 6, 5,0/2/5/38/70
+********************
+../images/256px-Earthrise.jpg,Earthrise,0.00,30,10, 6, 5,0/3/18/29/30
+../images/256px-Earthrise.jpg,Earthrise,0.05,30,10, 6, 5,0/4/13/29/30
+../images/200px-mickey.jpg,mickey,0.00,30,10, 6, 5,0/27/30/30/30
+../images/200px-mickey.jpg,mickey,0.05,30,10, 6, 5,0/10/20/29/29

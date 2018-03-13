@@ -1,0 +1,383 @@
+../images/200px-cat.jpg,0.00,101, 7, 2, 5,101/101/101
+../images/200px-cat.jpg,0.01,101, 7, 2, 5,95/100/100
+../images/200px-cat.jpg,0.05,101, 7, 2, 5,51/96/98
+../images/200px-mickey.jpg,0.00,101, 7, 2, 5,58/101/101
+../images/200px-mickey.jpg,0.01,101, 7, 2, 5,60/101/101
+../images/200px-mickey.jpg,0.05,101, 7, 2, 5,17/75/88
+../images/200px-morningsun.jpg,0.00,101, 7, 2, 5,101/101/101
+../images/200px-morningsun.jpg,0.01,101, 7, 2, 5,101/101/101
+../images/200px-morningsun.jpg,0.05,101, 7, 2, 5,51/101/101
+../images/200px-rocket.jpg,0.00,101, 7, 2, 5,101/101/101
+../images/200px-rocket.jpg,0.01,101, 7, 2, 5,92/96/97
+../images/200px-rocket.jpg,0.05,101, 7, 2, 5,32/49/50
+../images/200px-steve.jpg,0.00,101, 7, 2, 5,101/101/101
+../images/200px-steve.jpg,0.01,101, 7, 2, 5,99/101/101
+../images/200px-steve.jpg,0.05,101, 7, 2, 5,59/101/101
+***Non-uniform***
+********************
+********************
+../images/200px-cat.jpg,0.00,101, 7, 2, 5,100/100/100
+../images/200px-cat.jpg,0.01,101, 7, 2, 5,90/100/100
+../images/200px-cat.jpg,0.05,101, 7, 2, 5,42/96/97
+../images/200px-mickey.jpg,0.00,101, 7, 2, 5,56/100/100
+../images/200px-mickey.jpg,0.01,101, 7, 2, 5,72/99/99
+../images/200px-mickey.jpg,0.05,101, 7, 2, 5,21/81/93
+../images/200px-morningsun.jpg,0.00,101, 7, 2, 5,100/100/100
+../images/200px-morningsun.jpg,0.01,101, 7, 2, 5,97/100/100
+../images/200px-morningsun.jpg,0.05,101, 7, 2, 5,39/99/99
+../images/200px-rocket.jpg,0.00,101, 7, 2, 5,100/100/100
+../images/200px-rocket.jpg,0.01,101, 7, 2, 5,93/95/95
+../images/200px-rocket.jpg,0.05,101, 7, 2, 5,39/51/52
+../images/200px-steve.jpg,0.00,101, 7, 2, 5,100/100/100
+../images/200px-steve.jpg,0.01,101, 7, 2, 5,70/100/100
+../images/200px-steve.jpg,0.05,101, 7, 2, 5,39/99/99
+../images/200px-beach.jpg,0.00,101, 7, 2, 5,100/100/100
+../images/200px-beach.jpg,0.01,101, 7, 2, 5,94/100/100
+../images/200px-beach.jpg,0.05,101, 7, 2, 5,35/99/99
+../images/200px-woody.jpg,0.00,101, 7, 2, 5,100/100/100
+../images/200px-woody.jpg,0.01,101, 7, 2, 5,99/100/100
+********************
+********************
+../images/200px-cat.jpg,0.00,101, 7, 3, 5,101/101/101
+********************
+../images/200px-rocket.jpg,0.05,101, 7, 3, 5,62/90/93
+********************
+********************
+../images/200px-rocket.jpg,0.05,101, 7, 4, 5,65/99/99
+********************
+********************
+********************
+********************
+../images/200px-cat.jpg,cat,0.00,101,10, 4, 5,101/101/101
+../images/200px-cat.jpg,cat,0.01,101,10, 4, 5,97/101/101
+../images/200px-cat.jpg,cat,0.05,101,10, 4, 5,47/100/101
+../images/200px-cat.jpg,cat,0.10,101,10, 4, 5,30/93/97
+../images/200px-mickey.jpg,mickey,0.00,101,10, 4, 5,76/101/101
+../images/200px-mickey.jpg,mickey,0.01,101,10, 4, 5,92/101/101
+********************
+../images/200px-morningsun.jpg,morningsun,0.00,101,10, 4, 5,101/101/101
+../images/200px-morningsun.jpg,morningsun,0.01,101,10, 4, 5,101/101/101
+../images/200px-morningsun.jpg,morningsun,0.05,101,10, 4, 5,50/101/101
+../images/200px-morningsun.jpg,morningsun,0.10,101,10, 4, 5,29/96/100
+../images/200px-rocket.jpg,rocket,0.00,101,10, 4, 5,101/101/101
+../images/200px-rocket.jpg,rocket,0.01,101,10, 4, 5,100/101/101
+../images/200px-rocket.jpg,rocket,0.05,101,10, 4, 5,65/99/99
+../images/200px-rocket.jpg,rocket,0.10,101,10, 4, 5,36/89/91
+../images/200px-steve.jpg,steve,0.00,101,10, 4, 5,101/101/101
+../images/200px-steve.jpg,steve,0.01,101,10, 4, 5,100/101/101
+../images/200px-steve.jpg,steve,0.05,101,10, 4, 5,69/101/101
+../images/200px-steve.jpg,steve,0.10,101,10, 4, 5,39/99/100
+../images/200px-beach.jpg,beach,0.00,101,10, 4, 5,101/101/101
+../images/200px-beach.jpg,beach,0.01,101,10, 4, 5,98/101/101
+../images/200px-beach.jpg,beach,0.05,101,10, 4, 5,47/101/101
+../images/200px-beach.jpg,beach,0.10,101,10, 4, 5,28/93/100
+../images/200px-woody.jpg,woody,0.00,101,10, 4, 5,101/101/101
+../images/200px-woody.jpg,woody,0.01,101,10, 4, 5,101/101/101
+../images/200px-woody.jpg,woody,0.05,101,10, 4, 5,73/101/101
+../images/200px-woody.jpg,woody,0.10,101,10, 4, 5,39/101/101
+../images/256px-Earthrise.jpg,Earthrise,0.00,101,10, 4, 5,101/101/101
+../images/256px-Earthrise.jpg,Earthrise,0.01,101,10, 4, 5,100/101/101
+../images/256px-Earthrise.jpg,Earthrise,0.05,101,10, 4, 5,75/100/101
+../images/256px-Earthrise.jpg,Earthrise,0.10,101,10, 4, 5,56/100/101
+../images/200px-jurassicpark.jpg,jurassicpark,0.00,101,10, 4, 5,101/101/101
+../images/200px-jurassicpark.jpg,jurassicpark,0.01,101,10, 4, 5,95/97/99
+********************
+********************
+../images/200px-morningsun.jpg,morningsun,0.00,31,10, 4, 5,31/31/31
+../images/200px-morningsun.jpg,morningsun,0.01,31,10, 4, 5,30/31/31
+../images/200px-morningsun.jpg,morningsun,0.05,31,10, 4, 5,12/31/31
+../images/200px-morningsun.jpg,morningsun,0.10,31,10, 4, 5,8/28/30
+../images/200px-rocket.jpg,rocket,0.00,31,10, 4, 5,31/31/31
+../images/200px-rocket.jpg,rocket,0.01,31,10, 4, 5,17/31/31
+../images/200px-rocket.jpg,rocket,0.05,31,10, 4, 5,21/29/29
+../images/200px-rocket.jpg,rocket,0.10,31,10, 4, 5,13/27/30
+../images/200px-steve.jpg,steve,0.00,31,10, 4, 5,31/31/31
+../images/200px-steve.jpg,steve,0.01,31,10, 4, 5,31/31/31
+../images/200px-steve.jpg,steve,0.05,31,10, 4, 5,15/31/31
+../images/200px-steve.jpg,steve,0.10,31,10, 4, 5,11/31/31
+../images/200px-beach.jpg,beach,0.00,31,10, 4, 5,31/31/31
+../images/200px-beach.jpg,beach,0.01,31,10, 4, 5,30/31/31
+../images/200px-beach.jpg,beach,0.05,31,10, 4, 5,11/30/31
+../images/200px-beach.jpg,beach,0.10,31,10, 4, 5,6/25/29
+../images/200px-woody.jpg,woody,0.00,31,10, 4, 5,31/31/31
+../images/200px-woody.jpg,woody,0.01,31,10, 4, 5,31/31/31
+../images/200px-woody.jpg,woody,0.05,31,10, 4, 5,18/31/31
+../images/200px-woody.jpg,woody,0.10,31,10, 4, 5,12/31/31
+../images/256px-Earthrise.jpg,Earthrise,0.00,31,10, 4, 5,31/31/31
+../images/256px-Earthrise.jpg,Earthrise,0.01,31,10, 4, 5,30/31/31
+../images/256px-Earthrise.jpg,Earthrise,0.05,31,10, 4, 5,27/31/31
+../images/256px-Earthrise.jpg,Earthrise,0.10,31,10, 4, 5,17/31/31
+********************
+../images/200px-morningsun.jpg,morningsun,0.00,31,10, 3, 5,31/31/31
+../images/200px-morningsun.jpg,morningsun,0.01,31,10, 3, 5,30/31/31
+../images/200px-morningsun.jpg,morningsun,0.05,31,10, 3, 5,10/30/31
+../images/200px-morningsun.jpg,morningsun,0.10,31,10, 3, 5,6/26/30
+../images/200px-rocket.jpg,rocket,0.00,31,10, 3, 5,31/31/31
+../images/200px-rocket.jpg,rocket,0.01,31,10, 3, 5,12/27/31
+../images/200px-rocket.jpg,rocket,0.05,31,10, 3, 5,12/26/28
+../images/200px-rocket.jpg,rocket,0.10,31,10, 3, 5,8/22/23
+../images/200px-steve.jpg,steve,0.00,31,10, 3, 5,31/31/31
+../images/200px-steve.jpg,steve,0.01,31,10, 3, 5,24/31/31
+../images/200px-steve.jpg,steve,0.05,31,10, 3, 5,18/31/31
+../images/200px-steve.jpg,steve,0.10,31,10, 3, 5,9/31/31
+../images/200px-beach.jpg,beach,0.00,31,10, 3, 5,31/31/31
+../images/200px-beach.jpg,beach,0.01,31,10, 3, 5,26/31/31
+../images/200px-beach.jpg,beach,0.05,31,10, 3, 5,12/29/31
+../images/200px-beach.jpg,beach,0.10,31,10, 3, 5,7/24/30
+../images/200px-woody.jpg,woody,0.00,31,10, 3, 5,31/31/31
+../images/200px-woody.jpg,woody,0.01,31,10, 3, 5,31/31/31
+../images/200px-woody.jpg,woody,0.05,31,10, 3, 5,18/23/23
+../images/200px-woody.jpg,woody,0.10,31,10, 3, 5,12/31/31
+../images/256px-Earthrise.jpg,Earthrise,0.00,31,10, 3, 5,31/31/31
+../images/256px-Earthrise.jpg,Earthrise,0.01,31,10, 3, 5,30/31/31
+../images/256px-Earthrise.jpg,Earthrise,0.05,31,10, 3, 5,26/31/31
+../images/256px-Earthrise.jpg,Earthrise,0.10,31,10, 3, 5,14/31/31
+********************
+../images/200px-morningsun.jpg,morningsun,0.00,31,10, 2, 5,31/31/31
+../images/200px-morningsun.jpg,morningsun,0.01,31,10, 2, 5,30/31/31
+../images/200px-morningsun.jpg,morningsun,0.05,31,10, 2, 5,11/31/31
+../images/200px-morningsun.jpg,morningsun,0.10,31,10, 2, 5,7/24/27
+../images/200px-rocket.jpg,rocket,0.00,31,10, 2, 5,8/20/22
+../images/200px-rocket.jpg,rocket,0.01,31,10, 2, 5,12/14/16
+../images/200px-rocket.jpg,rocket,0.05,31,10, 2, 5,9/19/19
+../images/200px-rocket.jpg,rocket,0.10,31,10, 2, 5,6/17/18
+../images/200px-steve.jpg,steve,0.00,31,10, 2, 5,31/31/31
+../images/200px-steve.jpg,steve,0.01,31,10, 2, 5,24/31/31
+../images/200px-steve.jpg,steve,0.05,31,10, 2, 5,15/31/31
+../images/200px-steve.jpg,steve,0.10,31,10, 2, 5,9/29/30
+../images/200px-beach.jpg,beach,0.00,31,10, 2, 5,31/31/31
+../images/200px-beach.jpg,beach,0.01,31,10, 2, 5,27/31/31
+../images/200px-beach.jpg,beach,0.05,31,10, 2, 5,12/30/31
+../images/200px-beach.jpg,beach,0.10,31,10, 2, 5,7/27/29
+../images/200px-woody.jpg,woody,0.00,31,10, 2, 5,31/31/31
+../images/200px-woody.jpg,woody,0.01,31,10, 2, 5,30/31/31
+../images/200px-woody.jpg,woody,0.05,31,10, 2, 5,18/31/31
+../images/200px-woody.jpg,woody,0.10,31,10, 2, 5,13/30/31
+../images/256px-Earthrise.jpg,Earthrise,0.00,31,10, 2, 5,31/31/31
+../images/256px-Earthrise.jpg,Earthrise,0.01,31,10, 2, 5,30/31/31
+../images/256px-Earthrise.jpg,Earthrise,0.05,31,10, 2, 5,26/31/31
+../images/256px-Earthrise.jpg,Earthrise,0.10,31,10, 2, 5,16/29/29
+*****************************************
+********** NON-UNIFORM: ************************
+********************
+../images/200px-cat.jpg,cat,0.00,31,10, 2, 5,31/31/31
+../images/200px-cat.jpg,cat,0.01,31,10, 2, 5,25/31/31
+../images/200px-cat.jpg,cat,0.05,31,10, 2, 5,12/26/27
+../images/200px-cat.jpg,cat,0.10,31,10, 2, 5,7/19/23
+../images/200px-mickey.jpg,mickey,0.00,31,10, 2, 5,14/31/31
+../images/200px-mickey.jpg,mickey,0.01,31,10, 2, 5,13/31/31
+../images/200px-mickey.jpg,mickey,0.05,31,10, 2, 5,6/22/28
+../images/200px-mickey.jpg,mickey,0.10,31,10, 2, 5,4/15/20
+********************
+../images/200px-cat.jpg,cat,0.00,31,10, 3, 5,31/31/31
+../images/200px-cat.jpg,cat,0.01,31,10, 3, 5,25/31/31
+../images/200px-cat.jpg,cat,0.05,31,10, 3, 5,13/27/28
+../images/200px-cat.jpg,cat,0.10,31,10, 3, 5,6/19/20
+../images/200px-mickey.jpg,mickey,0.00,31,10, 3, 5,14/31/31
+../images/200px-mickey.jpg,mickey,0.01,31,10, 3, 5,13/31/31
+../images/200px-mickey.jpg,mickey,0.05,31,10, 3, 5,7/22/26
+../images/200px-mickey.jpg,mickey,0.10,31,10, 3, 5,4/12/20
+********************
+../images/200px-cat.jpg,cat,0.00,31,10, 4, 5,31/31/31
+../images/200px-cat.jpg,cat,0.01,31,10, 4, 5,27/31/31
+../images/200px-cat.jpg,cat,0.05,31,10, 4, 5,12/24/27
+../images/200px-cat.jpg,cat,0.10,31,10, 4, 5,7/22/27
+../images/200px-mickey.jpg,mickey,0.00,31,10, 4, 5,19/31/31
+../images/200px-mickey.jpg,mickey,0.01,31,10, 4, 5,17/31/31
+../images/200px-mickey.jpg,mickey,0.05,31,10, 4, 5,9/28/29
+../images/200px-mickey.jpg,mickey,0.10,31,10, 4, 5,5/16/20
+********************
+../images/200px-cat.jpg,cat,0.00,101,10, 4, 5,100/100/100
+********************
+********************
+../images/200px-morningsun.jpg,morningsun,0.00,31,10, 3, 5,31/31/31
+../images/200px-morningsun.jpg,morningsun,0.01,31,10, 3, 5,31/31/31
+../images/200px-morningsun.jpg,morningsun,0.05,31,10, 3, 5,11/29/31
+../images/200px-morningsun.jpg,morningsun,0.10,31,10, 3, 5,6/22/25
+../images/200px-rocket.jpg,rocket,0.00,31,10, 3, 5,31/31/31
+../images/200px-rocket.jpg,rocket,0.01,31,10, 3, 5,31/31/31
+../images/200px-rocket.jpg,rocket,0.05,31,10, 3, 5,19/25/25
+../images/200px-rocket.jpg,rocket,0.10,31,10, 3, 5,11/20/21
+../images/200px-steve.jpg,steve,0.00,31,10, 3, 5,19/31/31
+../images/200px-steve.jpg,steve,0.01,31,10, 3, 5,31/31/31
+../images/200px-steve.jpg,steve,0.05,31,10, 3, 5,18/31/31
+../images/200px-steve.jpg,steve,0.10,31,10, 3, 5,14/31/31
+../images/200px-beach.jpg,beach,0.00,31,10, 3, 5,17/31/31
+../images/200px-beach.jpg,beach,0.01,31,10, 3, 5,31/31/31
+../images/200px-beach.jpg,beach,0.05,31,10, 3, 5,13/31/31
+../images/200px-beach.jpg,beach,0.10,31,10, 3, 5,9/24/24
+../images/200px-woody.jpg,woody,0.00,31,10, 3, 5,31/31/31
+../images/200px-woody.jpg,woody,0.01,31,10, 3, 5,31/31/31
+../images/200px-woody.jpg,woody,0.05,31,10, 3, 5,17/31/31
+../images/200px-woody.jpg,woody,0.10,31,10, 3, 5,11/30/31
+../images/256px-Earthrise.jpg,Earthrise,0.00,31,10, 3, 5,15/28/29
+../images/256px-Earthrise.jpg,Earthrise,0.01,31,10, 3, 5,31/31/31
+../images/256px-Earthrise.jpg,Earthrise,0.05,31,10, 3, 5,23/31/31
+../images/256px-Earthrise.jpg,Earthrise,0.10,31,10, 3, 5,19/31/31
+../images/200px-jurassicpark.jpg,jurassicpark,0.00,31,10, 3, 5,15/30/30
+../images/200px-jurassicpark.jpg,jurassicpark,0.01,31,10, 3, 5,10/27/29
+../images/200px-jurassicpark.jpg,jurassicpark,0.05,31,10, 3, 5,13/29/29
+../images/200px-jurassicpark.jpg,jurassicpark,0.10,31,10, 3, 5,9/23/23
+********************
+../images/200px-morningsun.jpg,morningsun,0.00,31,10, 2, 5,31/31/31
+../images/200px-morningsun.jpg,morningsun,0.01,31,10, 2, 5,31/31/31
+../images/200px-morningsun.jpg,morningsun,0.05,31,10, 2, 5,13/31/31
+../images/200px-morningsun.jpg,morningsun,0.10,31,10, 2, 5,8/25/29
+../images/200px-rocket.jpg,rocket,0.00,31,10, 2, 5,10/12/13
+../images/200px-rocket.jpg,rocket,0.01,31,10, 2, 5,9/21/22
+../images/200px-rocket.jpg,rocket,0.05,31,10, 2, 5,15/20/20
+../images/200px-rocket.jpg,rocket,0.10,31,10, 2, 5,8/20/21
+../images/200px-steve.jpg,steve,0.00,31,10, 2, 5,19/31/31
+../images/200px-steve.jpg,steve,0.01,31,10, 2, 5,31/31/31
+../images/200px-steve.jpg,steve,0.05,31,10, 2, 5,18/31/31
+../images/200px-steve.jpg,steve,0.10,31,10, 2, 5,12/31/31
+../images/200px-beach.jpg,beach,0.00,31,10, 2, 5,31/31/31
+../images/200px-beach.jpg,beach,0.01,31,10, 2, 5,30/31/31
+../images/200px-beach.jpg,beach,0.05,31,10, 2, 5,13/27/27
+../images/200px-beach.jpg,beach,0.10,31,10, 2, 5,8/27/27
+../images/200px-woody.jpg,woody,0.00,31,10, 2, 5,16/31/31
+../images/200px-woody.jpg,woody,0.01,31,10, 2, 5,30/31/31
+../images/200px-woody.jpg,woody,0.05,31,10, 2, 5,16/31/31
+../images/200px-woody.jpg,woody,0.10,31,10, 2, 5,11/28/28
+../images/256px-Earthrise.jpg,Earthrise,0.00,31,10, 2, 5,15/30/31
+../images/256px-Earthrise.jpg,Earthrise,0.01,31,10, 2, 5,31/31/31
+../images/256px-Earthrise.jpg,Earthrise,0.05,31,10, 2, 5,21/29/29
+../images/256px-Earthrise.jpg,Earthrise,0.10,31,10, 2, 5,17/22/22
+../images/200px-jurassicpark.jpg,jurassicpark,0.00,31,10, 2, 5,13/30/30
+../images/200px-jurassicpark.jpg,jurassicpark,0.01,31,10, 2, 5,10/23/24
+../images/200px-jurassicpark.jpg,jurassicpark,0.05,31,10, 2, 5,12/27/27
+../images/200px-jurassicpark.jpg,jurassicpark,0.10,31,10, 2, 5,8/21/21
+********************
+********************
+../images/200px-cat.jpg,cat,0.00,31,10, 3, 5,31/31/31
+../images/200px-cat.jpg,cat,0.01,31,10, 3, 5,9/31/31
+../images/200px-cat.jpg,cat,0.05,31,10, 3, 5,14/31/31
+../images/200px-cat.jpg,cat,0.10,31,10, 3, 5,9/28/30
+********************
+../images/200px-mickey.jpg,mickey,0.00,31,10, 3, 5,21/31/31
+../images/200px-mickey.jpg,mickey,0.01,31,10, 3, 5,21/31/31
+../images/200px-mickey.jpg,mickey,0.05,31,10, 3, 5,9/25/29
+../images/200px-mickey.jpg,mickey,0.10,31,10, 3, 5,5/11/19
+********************
+../images/200px-cat.jpg,cat,0.00,31,10, 4, 5,31/31/31
+../images/200px-cat.jpg,cat,0.01,31,10, 4, 5,18/31/31
+../images/200px-cat.jpg,cat,0.05,31,10, 4, 5,18/31/31
+../images/200px-cat.jpg,cat,0.10,31,10, 4, 5,11/30/31
+../images/200px-mickey.jpg,mickey,0.00,31,10, 4, 5,31/31/31
+../images/200px-mickey.jpg,mickey,0.01,31,10, 4, 5,29/31/31
+../images/200px-mickey.jpg,mickey,0.05,31,10, 4, 5,10/30/31
+../images/200px-mickey.jpg,mickey,0.10,31,10, 4, 5,7/23/27
+********************
+***UNIFORM***
+../images/200px-mickey.jpg,mickey,0.05,31,10, 5, 5,10/30/31
+../images/200px-mickey.jpg,mickey,0.10,31,10, 5, 5,5/20/26
+../images/200px-morningsun.jpg,morningsun,0.05,31,10, 5, 5,13/31/31
+../images/200px-morningsun.jpg,morningsun,0.10,31,10, 5, 5,8/28/30
+../images/200px-mickey.jpg,mickey,0.05,31,10, 6, 5,11/31/31
+../images/200px-mickey.jpg,mickey,0.10,31,10, 6, 5,8/23/29
+../images/200px-morningsun.jpg,morningsun,0.05,31,10, 6, 5,13/31/31
+../images/200px-morningsun.jpg,morningsun,0.10,31,10, 6, 5,11/30/30
+../images/200px-mickey.jpg,mickey,0.05,31,10, 7, 5,14/30/31
+../images/200px-mickey.jpg,mickey,0.10,31,10, 7, 5,8/24/29
+********************
+../images/200px-mickey.jpg,mickey,0.00,31,10, 4, 5,31/31/31
+../images/200px-mickey.jpg,mickey,0.01,31,10, 4, 5,29/31/31
+../images/200px-mickey.jpg,mickey,0.05,31,10, 4, 5,10/30/31
+********************
+../images/200px-mickey.jpg,mickey,0.05,31,10, 8, 5,11/30/31
+../images/200px-mickey.jpg,mickey,0.10,31,10, 8, 5,7/22/29
+../images/200px-morningsun.jpg,morningsun,0.05,31,10, 8, 5,15/31/31
+../images/200px-morningsun.jpg,morningsun,0.10,31,10, 8, 5,10/30/30
+../images/200px-mickey.jpg,mickey,0.05,31,10, 9, 5,14/30/31
+../images/200px-mickey.jpg,mickey,0.10,31,10, 9, 5,7/27/28
+********************
+********************
+../images/200px-mickey.jpg,mickey,0.05,31,10,10, 5,16/31/31
+../images/200px-mickey.jpg,mickey,0.10,31,10,10, 5,7/15/26
+../images/200px-morningsun.jpg,morningsun,0.05,31,10,10, 5,16/31/31
+../images/200px-morningsun.jpg,morningsun,0.10,31,10,10, 5,12/30/30
+../images/200px-mickey.jpg,mickey,0.05,31,10,11, 5,16/31/31
+../images/200px-mickey.jpg,mickey,0.10,31,10,11, 5,9/20/29
+../images/200px-morningsun.jpg,morningsun,0.05,31,10,11, 5,16/31/31
+../images/200px-morningsun.jpg,morningsun,0.10,31,10,11, 5,11/30/30
+********************
+../images/200px-mickey.jpg,mickey,0.05,31,10, 1, 5,3/8/11
+../images/200px-mickey.jpg,mickey,0.10,31,10, 1, 5,5/6/7
+../images/200px-morningsun.jpg,morningsun,0.05,31,10, 1, 5,6/18/18
+../images/200px-morningsun.jpg,morningsun,0.10,31,10, 1, 5,5/14/15
+********************
+../images/200px-mickey.jpg,mickey,0.05,31,10, 2, 5,5/21/25
+../images/200px-mickey.jpg,mickey,0.10,31,10, 2, 5,6/9/18
+../images/200px-morningsun.jpg,morningsun,0.05,31,10, 2, 5,11/31/31
+../images/200px-morningsun.jpg,morningsun,0.10,31,10, 2, 5,7/24/27
+../images/200px-mickey.jpg,mickey,0.05,31,10, 7, 5,14/30/31
+../images/200px-mickey.jpg,mickey,0.10,31,10, 7, 5,8/24/29
+../images/200px-morningsun.jpg,morningsun,0.05,31,10, 7, 5,15/31/31
+********************
+********************
+********************
+../images/200px-mickey.jpg,mickey,0.05,31,10,12, 5,9/30/31
+../images/200px-mickey.jpg,mickey,0.10,31,10,12, 5,7/15/26
+../images/200px-morningsun.jpg,morningsun,0.05,31,10,12, 5,16/31/31
+../images/200px-morningsun.jpg,morningsun,0.10,31,10,12, 5,12/30/30
+********************
+********************
+********************
+********************
+../images/200px-mickey.jpg,mickey,0.05,31,10, 4, 5,10/30/31
+../images/200px-mickey.jpg,mickey,0.10,31,10, 4, 5,7/23/27
+********************
+../images/200px-morningsun.jpg,morningsun,0.05,31,10, 9, 5,16/31/31
+../images/200px-morningsun.jpg,morningsun,0.10,31,10, 9, 5,10/30/30
+********************
+../images/200px-mickey.jpg,mickey,0.05,31,10,13, 5,9/30/31
+********************
+********************
+********************
+********************
+********************
+********************
+../images/200px-mickey.jpg,mickey,0.00,30, 1, 1, 5,  
+********************
+********************
+********************
+********************
+../images/200px-mickey.jpg,mickey,0.00,30, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.01,30, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.00,100, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.01,100, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.00,170, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.01,170, 1, 1, 5,  
+********************
+********************
+../images/200px-mickey.jpg,mickey,0.00,30, 1, 1, 5,  
+********************
+../images/200px-mickey.jpg,mickey,0.00,30, 1, 1, 5,  
+********************
+../images/200px-mickey.jpg,mickey,0.00,30, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.01,30, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.05,30, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.10,30, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.00,100, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.01,100, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.05,100, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.10,100, 1, 1, 5,  
+********************
+********************
+********************
+********************
+********************
+********************
+********************
+../images/200px-mickey.jpg,mickey,0.00,30, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.01,30, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.05,30, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.10,30, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.00,100, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.01,100, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.05,100, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.10,100, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.00,170, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.01,170, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.05,170, 1, 1, 5,  
+../images/200px-mickey.jpg,mickey,0.10,170, 1, 1, 5,  
