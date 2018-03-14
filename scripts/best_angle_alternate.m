@@ -5,7 +5,7 @@ function best_angle = ...
     % Generate all possible angles.
     all_possible_angles = ...
         zeros(size(noisy_theta, 2), ceil(noise_amplitude/precision) + 1);
-    for i=1:size(noisy_theta, 2)
+    parfor i=1:size(noisy_theta, 2)
         possible_angles = ...
             zeros(1, ceil(noise_amplitude/precision) + 1);
         dummy = ...
@@ -18,7 +18,7 @@ function best_angle = ...
     % Start choosing the best angle.
     best_angle = all_possible_angles(:, 2)';
     
-    for i=1:size(all_possible_angles, 1)
+    parfor i=1:size(all_possible_angles, 1)
         min_error = 100;
         pos_best_theta = 1;
         for j=1:size(all_possible_angles, 2)

@@ -3,10 +3,10 @@ function [reconstructed_image, better_theta] = refine_reconstruction(projections
 
     y = projections(:);
     D = dctmtx(height);
-    amplitude = 12;
+    amplitude = 6;
 
-    lambda  = 0.1; % regularization parameter
-    rel_tol = 200; % relative target duality gap
+    lambda  = 0.01; % regularization parameter
+    rel_tol = 10; % relative target duality gap
     
     n = height*width;
     m = projection_length*size(noisy_theta, 2);
@@ -41,7 +41,6 @@ function [reconstructed_image, better_theta] = refine_reconstruction(projections
                 reconstructed_image, projections);
         else
             precision = precision/1.1;
-            amplitude = amplitude/1.1;
 
             % Do a brute force search on all angles.
             better_theta = ...

@@ -3,7 +3,7 @@ num_theta = [20 30 50 80 100];
 P = imread('../images/200px-mickey.jpg');
 P = imresize(P, 0.4);
 P = im2double(rgb2gray(P));
-parfor o=3:3
+parfor o=1:5
     theta_to_write = zeros(3, num_theta(o));
     disp(num_theta(o));
     % Write the original image.
