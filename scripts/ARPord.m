@@ -1,4 +1,4 @@
-function thetasestimated = ARPord(Pgiven, svector, sigmaNoise)
+function [refinedProjections, thetasestimated] = ARPord(Pgiven, svector, sigmaNoise)
     numkeep = size(Pgiven, 2);
     kmax = numkeep - 1;
     numstarts = 10;
@@ -6,6 +6,7 @@ function thetasestimated = ARPord(Pgiven, svector, sigmaNoise)
 
     Pgiven = denoise(Pgiven, sigmaNoise, 50, 200);
     Pgiven = max(0, Pgiven);
+    refinedProjections = Pgiven;
 
     M=ones(size(Pgiven,2), kmax+1); % each column represents kth moments for one k, for all directions
     for k = 0:kmax

@@ -3,7 +3,7 @@ num_theta = [20 30 50 80 100];
 P = imread('../images/200px-mickey.jpg');
 P = imresize(P, 0.4);
 P = im2double(rgb2gray(P));
-parfor o=1:5
+parfor o=3:3
     theta_to_write = zeros(3, num_theta(o));
     disp(num_theta(o));
     % Write the original image.
@@ -39,7 +39,7 @@ parfor o=1:5
     width = size(P, 2);
     projection_length = size(projections, 1);
 
-    thetasestimated = ARPord(projections, svector, sigmaNoise);
+    [projections, thetasestimated] = ARPord(projections, svector, sigmaNoise);
     theta_to_write(2, :) = thetasestimated;
 
     % Reconstruct the images from projection.
