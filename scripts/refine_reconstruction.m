@@ -3,10 +3,10 @@ function [reconstructed_image, better_theta] = refine_reconstruction(projections
 
     y = projections(:);
     D = dctmtx(height);
-    amplitude = 6;
+    amplitude = 4;
 
-    lambda  = 0.01; % regularization parameter
-    rel_tol = 10; % relative target duality gap
+    lambda  = 0.1; % regularization parameter
+    rel_tol = 200; % relative target duality gap
     
     n = height*width;
     m = projection_length*size(noisy_theta, 2);
@@ -30,6 +30,7 @@ function [reconstructed_image, better_theta] = refine_reconstruction(projections
 
         reconstructed_image = reshape(reconstructed_image, [height, width]);
         reconstructed_image = D'*reconstructed_image;
+        reconstructed_image(reconstructed_image < 0) = 0;
 
         if function_error < previous_error
             noisy_theta = better_theta;

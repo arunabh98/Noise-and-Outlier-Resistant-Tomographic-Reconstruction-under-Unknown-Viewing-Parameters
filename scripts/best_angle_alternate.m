@@ -19,7 +19,7 @@ function best_angle = ...
     best_angle = all_possible_angles(:, 2)';
     
     parfor i=1:size(all_possible_angles, 1)
-        min_error = 100;
+        min_error = inf;
         pos_best_theta = 1;
         for j=1:size(all_possible_angles, 2)
             best_angle(i) = all_possible_angles(i, j);
