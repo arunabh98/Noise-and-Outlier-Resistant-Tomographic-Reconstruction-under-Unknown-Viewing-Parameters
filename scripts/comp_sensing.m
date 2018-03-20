@@ -7,7 +7,7 @@ P = im2double(rgb2gray(P));
 D = dctmtx(80);
 x = D*P;
 x = x(:);
-sigmaNoiseFraction = 0.01;
+sigmaNoiseFraction = 0.05;
 filename = ...
     '../results/moment_estimation/unknown_angles/5_percent_noise/';
 lambda  = 0.1;
