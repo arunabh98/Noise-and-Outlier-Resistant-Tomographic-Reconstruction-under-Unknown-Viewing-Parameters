@@ -7,7 +7,7 @@ P = im2double(rgb2gray(P));
 D = dctmtx(80);
 x = D*P;
 x = x(:);
-sigmaNoiseFraction = 0.5;
+sigmaNoiseFraction = 0.05;
 filename = ...
     '../results/moment_estimation/k_means_and_unknown/';
 lambda  = 0.1;
@@ -23,7 +23,8 @@ for o=1:1
     amplitude = 10;
 
     % Define ground truth angles and take the tomographic projection.
-    theta = datasample(0:179, num_theta(o));  
+%     theta = datasample(0:179, num_theta(o));  
+    theta = 1:1.8:179;
     [projections, svector] = radon(P,theta);
  
     % Normalize s to a unit circle
