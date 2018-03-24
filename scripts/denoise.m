@@ -29,7 +29,7 @@ end
 
 patchlist_denoised = zeros(size(patchlist));
 
-for p = 1:ctr
+parfor p = 1:ctr
     if mod(p,100) == 0
         fprintf(' %d', p);
     end
