@@ -15,106 +15,112 @@ rel_tol = 200;
 output_size = max(size(P));
 height = size(P, 1);
 width = size(P, 2);
-iteration_name = '500_60/';
 
 % Number of angles list.
-num_theta = 3000;
+num_theta = [500 800 1000 2000];
 
-for o=1:1
-    amplitude = 10;
+% Number of clusters.
+num_clusters = [30 50 80 90 120];
 
-    % Define ground truth angles and take the tomographic projection.
-%     theta = datasample(0:179, num_theta(o));  
-    theta = 1:0.36:179;
-    [projections, svector] = radon(P,theta);
- 
-    % Normalize s to a unit circle
-    smax = max(abs(svector));
-    svector = svector / smax;
-    projection_length = size(projections, 1);
+parfor o=1:size(num_theta, 2)
+    for k=1:size(num_clusters, 2)
+        amplitude = 10;
+        iteration_name = ...
+            strcat(num2str(num_theta(o)), '_', num2str(num_clusters(k)));
+        % Define ground truth angles and take the tomographic projection.
+        theta = datasample(0:0.01:179, num_theta(o));  
+        [projections, svector] = radon(P,theta);
 
-    % Add noise to projections.
-    [all_projections, sigmaNoise] = add_noise(projections, sigmaNoiseFraction);
-    
-    % Cluster the projections into groups.
-    % Using k-means clustering and denoise them.
-    projections = cluster_projections(all_projections, sigmaNoise);
-    
-    % Predict the angles using moment angle estimation.
-    noisy_theta = ARPord_Kmeans(projections, svector);
-    noisy_theta = noisy_theta';
+        % Normalize s to a unit circle
+        smax = max(abs(svector));
+        svector = svector / smax;
+        projection_length = size(projections, 1);
 
-    noisy_theta = noisy_theta + theta(1) - noisy_theta(1);
-    noisy_theta = process_theta(noisy_theta);
+        % Add noise to projections.
+        [all_projections, sigmaNoise] = ...
+            add_noise(projections, sigmaNoiseFraction);
 
-    y = projections(:);
+        % Cluster the projections into groups.
+        % Using k-means clustering and denoise them.
+        projections = cluster_projections(all_projections,...
+            sigmaNoise, num_clusters(k));
 
-    n = height*width;
-    m = projection_length*size(noisy_theta, 2);
+        % Predict the angles using moment angle estimation.
+        noisy_theta = ARPord_Kmeans(projections, svector);
+        noisy_theta = noisy_theta';
 
-    % Start iteration.
-    better_theta = noisy_theta;
-    previous_error = inf;
-    precision = 0.1;
-    errors = [];
+        noisy_theta = noisy_theta + theta(1) - noisy_theta(1);
+        noisy_theta = process_theta(noisy_theta);
 
-    % Reconstruct the images from projection.
-    estimated_image = iradon(projections, noisy_theta, output_size);
+        y = projections(:);
 
-    for i=1:40
-        A = radonTransform(...
-            better_theta, width, height, output_size, projection_length);
-        At = A';
+        n = height*width;
+        m = projection_length*size(noisy_theta, 2);
 
-        %run the l1-regularized least squares solver
-        [reconstructed_image, status]= ...
-            l1_ls(A,At,m,n,y,lambda,rel_tol,true);
+        % Start iteration.
+        better_theta = noisy_theta;
+        previous_error = inf;
+        precision = 0.1;
+        errors = [];
 
-        % The error we optimise.
-        function_error = norm(A*reconstructed_image - y).^2 + ...
-            lambda*norm(reconstructed_image, 1);
+        % Reconstruct the images from projection.
+        estimated_image = iradon(projections, noisy_theta, output_size);
         
-        % Reconstruct the image.
-        reconstructed_image = reshape(reconstructed_image, [height, width]);
-        reconstructed_image = D'*reconstructed_image;
-        reconstructed_image(reconstructed_image < 0) = 0;
+        for i=1:40
+            A = radonTransform(...
+                better_theta, width, height, output_size, projection_length);
+            At = A';
 
-        if function_error < previous_error
-            noisy_theta = better_theta;
-            previous_error = function_error;
+            %run the l1-regularized least squares solver
+            [reconstructed_image, status]= ...
+                l1_ls(A,At,m,n,y,lambda,rel_tol,true);
 
-            disp(function_error);
-            errors = [errors function_error];
+            % The error we optimise.
+            function_error = norm(A*reconstructed_image - y).^2 + ...
+                lambda*norm(reconstructed_image, 1);
 
-            % Do a brute force search on all angles.
-            better_theta = ...
-                best_angle_alternate(precision, amplitude, noisy_theta,...
-                reconstructed_image, projections);
-        else
-            precision = precision/1.1;
-            amplitude = amplitude/1.1;
+            % Reconstruct the image.
+            reconstructed_image = reshape(reconstructed_image, [height, width]);
+            reconstructed_image = D'*reconstructed_image;
+            reconstructed_image(reconstructed_image < 0) = 0;
 
-            % Do a brute force search on all angles.
-            better_theta = ...
-                best_angle_alternate(precision, amplitude, noisy_theta,...
-                reconstructed_image, projections);
+            if function_error < previous_error
+                noisy_theta = better_theta;
+                previous_error = function_error;
+
+                disp(function_error);
+                errors = [errors function_error];
+
+                % Do a brute force search on all angles.
+                better_theta = ...
+                    best_angle_alternate(precision, amplitude, noisy_theta,...
+                    reconstructed_image, projections);
+            else
+                precision = precision/1.1;
+                amplitude = amplitude/1.1;
+
+                % Do a brute force search on all angles.
+                better_theta = ...
+                    best_angle_alternate(precision, amplitude, noisy_theta,...
+                    reconstructed_image, projections);
+            end
         end
-    end
-    
-    better_theta = better_theta + theta(1) - better_theta(1);
-    better_theta = process_theta(better_theta);
-    
-    % Store all the results.
-    imwrite(reconstructed_image, strcat(filename,...
-        iteration_name, '/reconstructed_image.png'));
-    imwrite(estimated_image, strcat(filename,...
-        iteration_name, '/estimated_image.png'));
-    imwrite(P, strcat(filename,...
-        iteration_name, '/original_image.png'));
-    fileID = fopen(strcat(filename, iteration_name,'thetas.txt'), 'w');
-    fprintf(fileID,'%16s %20s\n','estimated angles', 'reconstructed angles');
-    noisy_theta = noisy_theta';
-    better_theta = better_theta';
-    fprintf(fileID,'%3.3s %3.3s\n',[noisy_theta better_theta]);
-    fclose(fileID);
+
+        better_theta = better_theta + theta(1) - better_theta(1);
+        better_theta = process_theta(better_theta);
+        
+        mkdir(strcat(filename, iteration_name));
+        % Store all the results.
+        imwrite(reconstructed_image, strcat(filename,...
+            iteration_name, '/reconstructed_image.png'));
+        imwrite(estimated_image, strcat(filename,...
+            iteration_name, '/estimated_image.png'));
+        imwrite(P, strcat(filename,...
+            iteration_name, '/original_image.png'));
+        noisy_theta = noisy_theta';
+        better_theta = better_theta';
+        thetas = [noisy_theta better_theta];
+        csvwrite(strcat(filename,...
+            iteration_name, '/thetas.csv'), thetas);
+    end;
 end;

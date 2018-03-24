@@ -1,7 +1,5 @@
-function clustered_projections = cluster_projections(projections, sigmaNoise)
-    % Number of clusters in which we want to cluster the projections.
-    number_of_clusters = 60;
-    
+function clustered_projections = ...
+    cluster_projections(projections, sigmaNoise, number_of_clusters)
     % Denoise all the projections.
     projections = denoise(projections, sigmaNoise, 50, 200);
     projections(projections < 0) = 0;

@@ -1,7 +1,7 @@
 function [thetasestimated] = ARPord_Kmeans(Pgiven, svector)
     numkeep = size(Pgiven, 2);
     kmax = numkeep - 1;
-    numstarts = 2;
+    numstarts = 5;
     Ord = 8;
 
     M=ones(size(Pgiven,2), kmax+1); % each column represents kth moments for one k, for all directions
@@ -40,7 +40,7 @@ function [thetasestimated] = ARPord_Kmeans(Pgiven, svector)
                 besttheta = thetasestimated(i);
                 bestE = Ehlcc;
 
-                for t = -179:180
+                for t = -179:0.1:180
 
                     thetas_iter = thetasestimated;
                     thetas_iter(i) = t;
