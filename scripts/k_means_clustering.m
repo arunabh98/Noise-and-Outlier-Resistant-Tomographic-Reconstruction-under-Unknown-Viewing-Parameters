@@ -20,7 +20,7 @@ width = size(P, 2);
 num_theta = [500 800 1000 2000];
 
 % Number of clusters.
-num_clusters = [30 50 80 90 120];
+num_clusters = [80 90 120];
 
 parfor o=1:size(num_theta, 2)
     for k=1:size(num_clusters, 2)
