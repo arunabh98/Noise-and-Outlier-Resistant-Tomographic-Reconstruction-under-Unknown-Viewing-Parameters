@@ -17,14 +17,14 @@ height = size(P, 1);
 width = size(P, 2);
 
 % Number of angles list.
-num_theta = [500 800 1000 2000];
+num_theta = 10000;
 
 % Number of clusters.
-num_clusters = [80 90 120];
+num_clusters = [30 50 100];
 
-parfor o=1:size(num_theta, 2)
-    for k=1:size(num_clusters, 2)
-        amplitude = 10;
+for o=1:size(num_theta, 2)
+    parfor k=1:size(num_clusters, 2)
+        amplitude = 20;
         iteration_name = ...
             strcat(num2str(num_theta(o)), '_', num2str(num_clusters(k)));
         % Define ground truth angles and take the tomographic projection.
@@ -122,5 +122,11 @@ parfor o=1:size(num_theta, 2)
         thetas = [noisy_theta better_theta];
         csvwrite(strcat(filename,...
             iteration_name, '/thetas.csv'), thetas);
+        csvwrite(strcat(filename,...
+            iteration_name, '/original_thetas.csv'), theta);
+        % Plot the function error.
+        figure; plot(errors);
+        saveas(gcf, ...
+            strcat(filename, iteration_name, '/error.png'));
     end;
 end;

@@ -1,7 +1,7 @@
 function [thetasestimated] = ARPord_Kmeans(Pgiven, svector)
     numkeep = size(Pgiven, 2);
     kmax = numkeep - 1;
-    numstarts = 2;
+    numstarts = 3;
     Ord = 8;
 
     M=ones(size(Pgiven,2), kmax+1); % each column represents kth moments for one k, for all directions
