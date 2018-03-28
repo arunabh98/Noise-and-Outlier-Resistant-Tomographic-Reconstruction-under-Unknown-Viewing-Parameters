@@ -20,10 +20,10 @@ width = size(P, 2);
 num_theta = 10000;
 
 % Number of clusters.
-num_clusters = [30 50 100];
+num_clusters = 50;
 
 for o=1:size(num_theta, 2)
-    parfor k=1:size(num_clusters, 2)
+    for k=1:size(num_clusters, 2)
         amplitude = 20;
         iteration_name = ...
             strcat(num2str(num_theta(o)), '_', num2str(num_clusters(k)));

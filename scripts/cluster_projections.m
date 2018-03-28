@@ -1,12 +1,12 @@
 function clustered_projections = ...
     cluster_projections(projections, sigmaNoise, number_of_clusters)
     % Denoise all the projections.
-    projections = denoise(projections, sigmaNoise, 50, 200);
+    projections = denoise(projections, sigmaNoise, 117, 200);
     projections(projections < 0) = 0;
     all_projections = projections;
     
     % Cluster all the projections.
-    [idx, ~] = kmeans(all_projections', number_of_clusters);    
+    [idx, ~] = kmeans(all_projections', number_of_clusters, 'MaxIter', 10000);    
     idx = idx'; 
     [sorted_idx, idx_order] = sort(idx);
     sorted_projections = all_projections(:, idx_order);
