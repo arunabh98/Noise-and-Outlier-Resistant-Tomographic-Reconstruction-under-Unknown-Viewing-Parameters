@@ -1,0 +1,2 @@
+estimated image relative error: 0.2826
+reconstructed image: 0.2892

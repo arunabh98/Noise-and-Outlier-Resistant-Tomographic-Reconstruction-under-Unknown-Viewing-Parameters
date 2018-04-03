@@ -1,11 +1,13 @@
 % Number of angles list.
-num_theta = 10000;
+num_theta = 20000;
+angle_low = 180;
+angle_high = 0;
 
 filename = strcat('../results/moment_estimation/k_means_and_unknown/',...
     num2str(num_theta), '/');
 
 % Number of clusters.
-num_clusters = [90];
+num_clusters = [120];
 
 for k=1:size(num_clusters, 2)
     iteration_name = ...
@@ -19,8 +21,8 @@ for k=1:size(num_clusters, 2)
     
     error_estimated_image = inf;
     final_estimated_image = estimated_image;
-    for i = -60:0.1:-50
-        rotated_image = imrotate(estimated_image, i, 'bilinear', 'crop');
+    for i = angle_low:0.1:angle_high
+        rotated_image = imrotate(estimated_image, i, 'crop');
         error = ...
             norm(rotated_image - original_image)/norm(original_image);
         if error < error_estimated_image
@@ -31,9 +33,9 @@ for k=1:size(num_clusters, 2)
     disp(error_estimated_image);
     
     error_reconstructed_image = inf;
-    final_reconstructed_image = estimated_image;
-    for i = -60:0.1:-50
-        rotated_image = imrotate(reconstructed_image, i, 'bilinear', 'crop');
+    final_reconstructed_image = reconstructed_image;
+    for i = angle_low:0.1:angle_high
+        rotated_image = imrotate(reconstructed_image, i, 'crop');
         error = ...
             norm(rotated_image - original_image)/norm(original_image);
         if error < error_reconstructed_image
