@@ -1,10 +1,10 @@
 % Get the image.
-P = imread('../images/200px-mickey.jpg');
-P = imresize(P, 0.4);
+P = imread('../images/200px-cat.jpg');
+% P = imresize(P, 0.4);
 P = im2double(rgb2gray(P));
 
 % Constants.
-D = dctmtx(80);
+D = dctmtx(200);
 x = D*P;
 x = x(:);
 sigmaNoiseFraction = 0.5;
@@ -17,10 +17,10 @@ height = size(P, 1);
 width = size(P, 2);
 
 % Number of angles list.
-num_theta = [20000, 40000];
+num_theta = [50000 80000 120000];
 
 % Number of clusters.
-num_clusters = [50 90 120];
+num_clusters = [50];
 
 for o=1:size(num_theta, 2)
     for k=1:size(num_clusters, 2)
