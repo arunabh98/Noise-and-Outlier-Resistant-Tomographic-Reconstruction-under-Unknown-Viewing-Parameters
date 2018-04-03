@@ -1,0 +1,2 @@
+relative reconstruction error of estimated image: 0.3134
+relative reconstruction error of reconstructed image: 0.2710

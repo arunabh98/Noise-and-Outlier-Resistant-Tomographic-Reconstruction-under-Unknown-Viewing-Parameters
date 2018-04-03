@@ -1,7 +1,7 @@
 % Number of angles list.
-num_theta = 20000;
-angle_low = -100;
-angle_high = 100;
+num_theta = 40000;
+angle_low = -180;
+angle_high = 180;
 
 filename = strcat(...
     '../results/moment_estimation/k_means_and_unknown/Filtered Backprojection/',...
