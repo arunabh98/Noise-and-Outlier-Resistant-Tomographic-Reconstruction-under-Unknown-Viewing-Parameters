@@ -66,7 +66,7 @@ for o=1:size(num_theta, 2)
         % Reconstruct the images from projection.
         estimated_image = iradon(projections, noisy_theta, output_size);
         
-        for i=1:30
+        for i=1:40
             A = radonTransform(...
                 better_theta, width, height, output_size, projection_length);
             At = A';
