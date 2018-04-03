@@ -1,13 +1,14 @@
 % Number of angles list.
 num_theta = 20000;
-angle_low = 180;
-angle_high = 0;
+angle_low = -100;
+angle_high = 100;
 
-filename = strcat('../results/moment_estimation/k_means_and_unknown/',...
+filename = strcat(...
+    '../results/moment_estimation/k_means_and_unknown/Filtered Backprojection/',...
     num2str(num_theta), '/');
 
 % Number of clusters.
-num_clusters = [120];
+num_clusters = [90];
 
 for k=1:size(num_clusters, 2)
     iteration_name = ...
