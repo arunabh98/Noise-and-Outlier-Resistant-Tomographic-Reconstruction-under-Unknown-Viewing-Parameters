@@ -1,7 +1,7 @@
 function clustered_projections = ...
     cluster_projections(projections, sigmaNoise, number_of_clusters)
     % Denoise all the projections.
-    projections = denoise(projections, sigmaNoise, 287, 400);
+    projections = denoise(projections, sigmaNoise, 117, 200);
     projections(projections < 0) = 0;
     all_projections = projections;
     
@@ -21,8 +21,9 @@ function clustered_projections = ...
         cluster_projections = ...
             sorted_projections(:, c:c + number_of_projections(i) - 1);
         mean_projections(: , i) = mean(cluster_projections, 2);
-        clustered_projections(:, i) = denoise(mean_projections(: , i),...
-            sigmaNoise/number_of_projections(i), 10, 40);
+%         clustered_projections(:, i) = denoise(mean_projections(: , i),...
+%             sigmaNoise/number_of_projections(i), 10, 40);
+        clustered_projections(:, i) = mean_projections(: , i);
         c = c + number_of_projections(i);
     end
     clustered_projections(clustered_projections < 0) = 0;

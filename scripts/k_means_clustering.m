@@ -1,10 +1,10 @@
 % Get the image.
 P = imread('../images/200px-mickey.jpg');
-% P = imresize(P, 0.);
+P = imresize(P, 0.4);
 P = im2double(rgb2gray(P));
 
 % Constants.
-D = dctmtx(200);
+D = dctmtx(80);
 x = D*P;
 x = x(:);
 sigmaNoiseFraction = 0.5;
@@ -17,18 +17,18 @@ height = size(P, 1);
 width = size(P, 2);
 
 % Number of angles list.
-num_theta = [10000 20000];
+num_theta = [20000, 40000];
 
 % Number of clusters.
 num_clusters = [50 90 120];
 
 for o=1:size(num_theta, 2)
     for k=1:size(num_clusters, 2)
-        amplitude = 20;
+        amplitude = 30;
         iteration_name = ...
             strcat(num2str(num_theta(o)), '_', num2str(num_clusters(k)));
         % Define ground truth angles and take the tomographic projection.
-        theta = datasample(0:0.01:179, num_theta(o));  
+        theta = datasample(0:0.001:179, num_theta(o));  
         [projections, svector] = radon(P,theta);
 
         % Normalize s to a unit circle
@@ -66,7 +66,7 @@ for o=1:size(num_theta, 2)
         % Reconstruct the images from projection.
         estimated_image = iradon(projections, noisy_theta, output_size);
         
-        for i=1:40
+        for i=1:30
             A = radonTransform(...
                 better_theta, width, height, output_size, projection_length);
             At = A';
