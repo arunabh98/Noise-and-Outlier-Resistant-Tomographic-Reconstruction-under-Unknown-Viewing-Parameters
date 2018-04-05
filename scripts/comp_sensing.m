@@ -17,7 +17,7 @@ height = size(P, 1);
 width = size(P, 2);
 
 % Number of angles list.
-num_theta = [80];
+num_theta = 30;
 
 parfor o=1:1
     theta_to_write = zeros(5, num_theta(o));
@@ -124,4 +124,4 @@ parfor o=1:1
     theta_to_write(5, 1) = relative_reconstructed_error;
     csvwrite(strcat(filename,...
         num2str(num_theta(o)), '/thetas.csv'), theta_to_write);
-end;
+end

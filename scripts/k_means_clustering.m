@@ -128,5 +128,5 @@ for o=1:size(num_theta, 2)
         figure; plot(errors);
         saveas(gcf, ...
             strcat(filename, iteration_name, '/error.png'));
-    end;
-end;
+    end
+end
