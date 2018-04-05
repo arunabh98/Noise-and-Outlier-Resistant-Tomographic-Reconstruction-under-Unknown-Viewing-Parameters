@@ -1,5 +1,5 @@
 % Get the image.
-P = imread('../images/200px-cat.jpg');
+P = imread('../images/200px-steve.jpg');
 % P = imresize(P, 0.4);
 P = im2double(rgb2gray(P));
 
@@ -20,7 +20,7 @@ width = size(P, 2);
 num_theta = [80000 120000];
 
 % Number of clusters.
-num_clusters = [50 100];
+num_clusters = [50 70];
 
 for o=1:size(num_theta, 2)
     for k=1:size(num_clusters, 2)
