@@ -1,10 +1,10 @@
 % Get the image.
 P = imread('../images/200px-steve.jpg');
-% P = imresize(P, 0.4);
+P = imresize(P, 0.5);
 P = im2double(rgb2gray(P));
 
 % Constants.
-D = dctmtx(200);
+D = dctmtx(100);
 x = D*P;
 x = x(:);
 sigmaNoiseFraction = 0.5;
@@ -17,7 +17,7 @@ height = size(P, 1);
 width = size(P, 2);
 
 % Number of angles list.
-num_theta = [80000 120000];
+num_theta = [40000 80000];
 
 % Number of clusters.
 num_clusters = [50 70];
