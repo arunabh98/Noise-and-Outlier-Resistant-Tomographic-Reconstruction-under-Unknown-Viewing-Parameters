@@ -1,5 +1,5 @@
 % Get the image.
-P = imread('../images/200px-steve.jpg');
+P = imread('../images/200px-beach.jpg');
 P = imresize(P, 0.5);
 P = im2double(rgb2gray(P));
 
@@ -17,10 +17,10 @@ height = size(P, 1);
 width = size(P, 2);
 
 % Number of angles list.
-num_theta = [40000 80000];
+num_theta = [40000 80000 120000];
 
 % Number of clusters.
-num_clusters = [50 70];
+num_clusters = [30 50 70];
 
 for o=1:size(num_theta, 2)
     for k=1:size(num_clusters, 2)
