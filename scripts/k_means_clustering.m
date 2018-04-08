@@ -1,5 +1,5 @@
 % Get the image.
-P = imread('../images/200px-beach.jpg');
+P = imread('../images/200px-woody.jpg');
 P = imresize(P, 0.5);
 P = im2double(rgb2gray(P));
 
