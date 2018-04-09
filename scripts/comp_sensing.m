@@ -19,7 +19,7 @@ width = size(P, 2);
 % Number of angles list.
 num_theta = 30;
 
-parfor o=1:1
+for o=1:1
     theta_to_write = zeros(5, num_theta(o));
     amplitude = 10;
 
