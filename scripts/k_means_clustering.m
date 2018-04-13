@@ -17,7 +17,7 @@ height = size(P, 1);
 width = size(P, 2);
 
 % Number of angles list.
-num_theta = [80000 150000];
+num_theta = [80000 120000];
 
 % Number of clusters.
 num_clusters = [30 50 70];
