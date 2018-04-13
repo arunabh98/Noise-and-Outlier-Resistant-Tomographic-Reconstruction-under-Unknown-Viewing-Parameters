@@ -1,10 +1,10 @@
 function [refinedProjections, thetasestimated] = ARPord(Pgiven, svector, sigmaNoise)
     numkeep = size(Pgiven, 2);
     kmax = numkeep - 1;
-    numstarts = 2;
+    numstarts = 3;
     Ord = 8;
 
-    Pgiven = denoise(Pgiven, sigmaNoise, 50, 200);
+    Pgiven = denoise(Pgiven, sigmaNoise, 50, 700);
     Pgiven = max(0, Pgiven);
     refinedProjections = Pgiven;
 
