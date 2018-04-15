@@ -2,6 +2,7 @@
 P = imread('../images/200px-mickey.jpg');
 P = imresize(P, 0.4);
 P = im2double(rgb2gray(P));
+max_shift_amplitude = 1;
 
 % Pad the image with a fixed boundary of 5 pixels.
 P = padarray(P, [3, 3], 0.0);
@@ -20,12 +21,11 @@ height = size(P, 1);
 width = size(P, 2);
 
 % Number of angles list.
-num_theta = [30 50 70 80];
+num_theta = [50 80 100 120];
 
-for o=1:4
-    theta_to_write = zeros(5, num_theta(o));
+for o=1:1
+    theta_to_write = zeros(10, num_theta(o));
     amplitude = 10;
-    shift_amplitude = 5;
 
     % Write the original image.
     imwrite(P, strcat(filename,...
@@ -35,12 +35,16 @@ for o=1:4
     theta = datasample(0:179, num_theta(o));  
     [projections, svector] = radon(P,theta);
     original_projections = projections;
+    original_shifts = zeros(size(theta));
     
     % Shift each projection by an unknown amount.
     for i=1:size(projections, 2)
-        projections(:, i) = circshift(projections(:, i), randi([-2, 2])); 
+        original_shifts(i) = ...
+            randi([-max_shift_amplitude, max_shift_amplitude]);
+        projections(:, i) = circshift(projections(:, i), original_shifts(i)); 
     end
     theta_to_write(1, :) = theta;
+    theta_to_write(6, :) = original_shifts;
  
     % Normalize s to a unit circle
     smax = max(abs(svector));
@@ -53,6 +57,8 @@ for o=1:4
     % Initial error.
     disp(norm(projections - original_projections));
     
+    estimated_shift_amounts = zeros(size(theta));
+    
     % Estimate the shifts by keeping the center of mass in the center.
     for i=1:size(projections, 2)
         current_projection = projections(:, i);
@@ -61,20 +67,38 @@ for o=1:4
             ndgrid(1:size(current_projection,1),1:size(current_projection,2));
         center_of_mass = sum(ii(:).*current_projection(:))/tot_mass;
         % disp(norm(projections(:, i) - original_projections(:, i)));
-        projections(:, i) = circshift(projections(:, i),...
-            round(((projection_length + 1)/2) - center_of_mass)); 
+        shift_amount = round(((projection_length - 1)/2) - center_of_mass);
+        if shift_amount > max_shift_amplitude
+            shift_amount  = max_shift_amplitude;
+        elseif shift_amount < -max_shift_amplitude
+            shift_amount  = -max_shift_amplitude;
+        end
+        estimated_shift_amounts(i) = -shift_amount;
+        projections(:, i) = circshift(projections(:, i), shift_amount); 
         % disp(norm(projections(:, i) - original_projections(:, i)));
     end
     
     % Error after distance correction.
     disp(norm(projections - original_projections));
+    disp(sum(estimated_shift_amounts ~= original_shifts));
+    theta_to_write(7, :) = estimated_shift_amounts;
     
     % Predict the angles using moment angle estimation.
-    [projections, noisy_theta] = ARPord(projections, svector, sigmaNoise);
+    [projections, noisy_theta, projection_shifts] = ...
+        SHARPord(projections, svector, sigmaNoise, max_shift_amplitude+2,...
+        -estimated_shift_amounts');
+    
+    for i=1:size(projections, 2)
+        projections(:, i) = circshift(projections(:, i), projection_shifts(i)); 
+    end
+    
+    theta_to_write(8, :) = -projection_shifts;
+    noisy_theta = noisy_theta';
+    projection_shifts = projection_shifts';
     
     % Error after noise removal.
     disp(norm(projections - original_projections));
-    noisy_theta = noisy_theta';
+    disp(sum(projection_shifts ~= original_shifts));
 
     noisy_theta = noisy_theta + theta(1) - noisy_theta(1);
     noisy_theta = process_theta(noisy_theta);
@@ -129,8 +153,8 @@ for o=1:4
                 reconstructed_image, projections);
             
             % Do a brute force search on all shifts.
-            projections = ...
-                best_shifts_estimate(shift_amplitude, noisy_theta,...
+            [projections, best_shifts] = ...
+                best_shifts_estimate(max_shift_amplitude, noisy_theta,...
                 reconstructed_image, shifted_projections);
         else
             precision = precision/1.1;
@@ -142,8 +166,8 @@ for o=1:4
                 reconstructed_image, projections);
             
             % Do a brute force search on all shifts.
-            projections = ...
-                best_shifts_estimate(shift_amplitude, noisy_theta,...
+            [projections, best_shifts] = ...
+                best_shifts_estimate(max_shift_amplitude, noisy_theta,...
                 reconstructed_image, shifted_projections);
         end
     end
@@ -154,6 +178,8 @@ for o=1:4
     better_theta = better_theta + theta(1) - better_theta(1);
     better_theta = process_theta(better_theta);
     theta_to_write(3, :) = better_theta;
+    theta_to_write(9, :) = -best_shifts;
+    
     relative_reconstructed_error = ...
         norm(better_theta - theta)/norm(theta);
     

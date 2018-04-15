@@ -18,7 +18,7 @@ function best_angle = ...
     % Start choosing the best angle.
     best_angle = all_possible_angles(:, 2)';
     
-    parfor i=1:size(all_possible_angles, 1)
+    for i=1:size(all_possible_angles, 1)
         min_error = inf;
         pos_best_theta = 1;
         for j=1:size(all_possible_angles, 2)
