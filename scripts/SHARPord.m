@@ -2,7 +2,7 @@ function [refinedProjections, thetasestimated, shiftsestimated] = ...
     SHARPord(Pgiven, svector, sigmaNoise, shift_amplitude, initialshiftestimate)
     numkeep = size(Pgiven, 2);
     kmax = numkeep - 1;
-    numstarts = 1;
+    numstarts = 15;
     Ord = 8;
 
     Pgiven = denoise(Pgiven, sigmaNoise, 50, 700);

@@ -21,9 +21,9 @@ height = size(P, 1);
 width = size(P, 2);
 
 % Number of angles list.
-num_theta = [50 80 100 120];
+num_theta = [30 50 70 80 100 120];
 
-for o=1:1
+parfor o=1:6
     theta_to_write = zeros(10, num_theta(o));
     amplitude = 10;
 
@@ -85,7 +85,7 @@ for o=1:1
     
     % Predict the angles using moment angle estimation.
     [projections, noisy_theta, projection_shifts] = ...
-        SHARPord(projections, svector, sigmaNoise, max_shift_amplitude+2,...
+        SHARPord(projections, svector, sigmaNoise, max_shift_amplitude,...
         -estimated_shift_amounts');
     
     for i=1:size(projections, 2)
