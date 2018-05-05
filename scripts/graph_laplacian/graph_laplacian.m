@@ -1,6 +1,6 @@
 num_theta = [100];
 % Get the image.
-P = imread('../images/200px-mickey.jpg');
+P = imread('../../images/200px-mickey.jpg');
 P = imresize(P, 0.4);
 P = im2double(rgb2gray(P)); 
 

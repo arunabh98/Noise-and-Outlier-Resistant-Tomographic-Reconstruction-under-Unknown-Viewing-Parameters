@@ -1,5 +1,5 @@
 function [refinedProjections, thetasestimated, shiftsestimated] = ...
-    SHARPord(Pgiven, svector, sigmaNoise, shift_amplitude, initialshiftestimate)
+    SHARPord(Pgiven, svector, sigmaNoise, shift_amplitude)
     numkeep = size(Pgiven, 2);
     kmax = numkeep - 1;
     numstarts = 15;
