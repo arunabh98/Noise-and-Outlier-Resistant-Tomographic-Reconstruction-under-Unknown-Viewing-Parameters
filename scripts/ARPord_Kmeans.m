@@ -1,4 +1,4 @@
-function [thetasestimated] = ARPord_Kmeans(Pgiven, svector)
+clearfunction [thetasestimated] = ARPord_Kmeans(Pgiven, svector)
     numkeep = size(Pgiven, 2);
     kmax = numkeep - 1;
     numstarts = 3;
