@@ -1,11 +1,8 @@
-# Tomography-Unknown-Angles
-All the scripts written during the course of this research can be found in the `scripts` folder.
-* `comp_sensing.m` is used to estimate the unknown angles as well we unknown shifts. All the parameters can be found in the top of the code,
-including the amount of noise. //
-* `k_means_clustering.m` is used to reconstruct the image from the tomographic projections in case of 50% noise. The angles in this case are
-completely unknown.
-* The files in the `graph_laplacian` folder is used to reconstruct the image using the different methodology of dimensionality reduction,
-using graph laplacians.
+# Noise-and-Outlier-Resistant-Tomographic-Reconstruction-under-Unknown-Viewing-Parameters
 
-All the results associated with this research can be found in the `results` folder. The important research articles consulted during the
-course of this project can be found in the `research_articles` folder.
+This repository contains the implementation of the novel algorithm presented in this [paper][1].
+
+## Abstract
+The paper presents an algorithm for effectively reconstructing an object from a set of its tomographic projections without any knowledge of the viewing directions or any prior structural information, in the presence of pathological amounts of noise, unknown shifts in the projections, and outliers among the projections. The outliers are mainly in the form of a number of projections of a completely different object, as compared to the object of interest. We introduce a novel approach of first processing the projections, then obtaining an initial estimate for the orientations and the shifts, and then define a refinement procedure to obtain the final reconstruction. Even in the presence of high noise variance (up to 50% of the average value of the (noiseless) projections) and presence of outliers, we are able to successfully reconstruct the object. We also provide interesting empirical comparisons of our method with the sparsity-based optimization procedures that have been used earlier for image reconstruction tasks.
+
+[1]: https://arunabh98.github.io/reports/tomography.pdf
